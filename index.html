@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Stunting dari Tahun ke Tahun</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Menggunakan Chart.js CDN agar grafik interaktif berjalan dengan lancar -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <h2>Grafik Perkembangan Data Stunting Desa</h2>
+            <p>Visualisasi data prevalensi stunting dari tahun ke tahun untuk pemantauan kesehatan anak.</p>
+        </div>
+
+        <!-- AREA GRAFIK -->
+        <div class="chart-container">
+            <canvas id="stuntingChart"></canvas>
+        </div>
+
+        <!-- INFORMASI TAMBAHAN / FOOTER -->
+        <div class="footer">
+            <p>Arahkan kursor (hover) atau ketuk batang grafik pada HP untuk melihat detail angka persentase.</p>
+            <p class="source">Sumber: Posyandu & Layanan Kesehatan Desa</p>
+        </div>
+    </div>
+
+    <!-- Hubungkan ke file JS eksternal -->
+    <script src="data.js"></script>
+</body>
+</html>
